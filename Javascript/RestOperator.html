@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <h1>Rest Operator</h1>
-    <p>If We want to separate Multiple aruguments in function where we use Rest Operator</p>
+    <p>
+      If We want to separate Multiple aruguments in function where we use Rest
+      Operator
+    </p>
+    <h5>Rest operator use to Take Rest Arguments remaining</h5>
     <script>
-
-function spreddata(name,...args){ //name take as first argument and ...args contains all remaining argumnts
-
-    document.write(name,"</br>")
-let sum=0;
-    for(let i in args){   //for in loop
-     
-        sum+=args[i]
-    }
-    document.write(sum+"</br>")
-}
-
-spreddata("dipak",2,5,9,80)
-spreddata("sagar",2,5,9,80,68,2)
-
-
-
-
-
-
+      function spreddata(name, ...args) {
+        //name take as first argument and ...args contains all remaining argumnts
+        document.write(name, "</br>");
+        let sum = 0;
+        for (let i in args) {
+          //for in loop
+          sum += args[i];
+        }
+        document.write(sum + "</br>");
+      }
+      spreddata("dipak", 2, 5, 9, 80);
+      spreddata("sagar", 2, 5, 9, 80, 68, 2);
     </script>
-</body>
+  </body>
 </html>

@@ -7,12 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    
-
+    <h1>Spred Oprator</h1>
+<p>In Spred Opeator We Spred The array as an aruguments in function</p>
     <script>
 
+// //We Can Cocatinate array With The help of spread operator
+
+let arr1=[1,5,6,8,9,7]
+let arr2=[58,56,8,5,9]
+
+let finalarr=[...arr1,...arr2]
+document.write(finalarr)+"<br/>"
 
 
-    </script>
+// //We Can Also Cocatinate Object With The help of spread operator
+
+
+let obj1={
+    name:"Dipak",
+    age:24
+}
+// document.write(obj1)
+let obj2={
+    occupation:"Developer"
+}
+// document.write(obj2)
+
+
+let finalObj={...obj1,...obj2}
+console.log(finalObj)
+
+
+</script>
 </body>
 </html>
