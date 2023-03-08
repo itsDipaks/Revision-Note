@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/user.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" >Home</a>
+      <a href="adminlogin.html">Admin Panel </a> 
+    </nav>
+<h1>Welcome To Masai Books Store</h1>
+
+<div class="operationdiv">
+    <select id="Genre" onchange="FilterBy()">
+        <option>Filter By</option>
+        <option value="Science">Science</option>
+        <option value="Fiction">Fiction</option>
+        <option value="History">History</option>
+        <option value="Tech">Tech</option>
+        <option value="Business">Business</option>
+      </select>
+
+
+      <select id="Edition" onchange="Sortdata()">
+        <option>Sort by Price </option>
+        <option value="asc">Low To High</option>
+        <option value="desc">High To Low</option>
+      </select>
+</div>
+    <div id="Show-all-books"></div>
+
+
+
+
+
+    <script src="./js/user.js"></script>
+</body>
+</html>

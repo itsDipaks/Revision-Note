@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/admin.css" />
+  </head>
+  <body>
+    <h1 class="title">Admin Login</h1>
+    <div id="admin-form">
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter Email: Eg.eve.holt@reqres.in"
+      />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter Password : Eg.cityslicka "
+      />
+      <button id="Login">Admin Login</button>
+    </div>
+
+    <p class="hint">
+      Use <br />
+      "email": "eve.holt@reqres.in",<br />
+      "password": "cityslicka"
+      <br />
+      For Admin Login
+    </p>
+
+    <script>
+      let loginbtn = document
+        .getElementById("Login")
+        .addEventListener("click", async () => {
+          let email = document.getElementById("email").value;
+          let password = document.getElementById("password").value;
+          // let login=async()=>{
+          const rawResponse = await fetch("https://reqres.in/api/login", {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({email, password}),
+          });
+          const content = await rawResponse.json();
+
+          if (content.token) {
+            alert("Login Sucess");
+            window.location.replace("/admin.html");
+          } else {
+            alert("Wrong Credentials");
+          }
+        });
+    </script>
+  </body>
+</html>

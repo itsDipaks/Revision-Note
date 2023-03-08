@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/admin.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="user.html">User-Panel</a>
+      <a href="index.html">Home</a>
+    </nav>
+    <h1>Admin Dashboard</h1>
+    <div id="Addbook-form">
+      <div>
+        <input
+          type="text"
+          required
+          id="img-url"
+          placeholder="Enter Imgage Url"
+        />
+        <input
+          type="text"
+          required
+          id="book-name"
+          placeholder="Enter Book Name"
+        />
+        <input
+          type="text"
+          required
+          id="author"
+          placeholder="Enter Auther Name"
+        />
+        <select id="Genre">
+          <option>Please Select Genre</option>
+          <option value="Science">Science</option>
+          <option value="Fiction">Fiction</option>
+          <option value="History">History</option>
+          <option value="Tech">Tech</option>
+          <option value="Business">Business</option>
+        </select>
+        <select id="Edition">
+          <option>Please Select Edition</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+        <input
+          type="text"
+          required
+          id="Publisher"
+          placeholder="Enter Publisher"
+        />
+        <input type="text" required id="Cost" placeholder="Enter Cost " />
+      </div>
+      <button id="Submitbookid">Add Book</button>
+    </div>
+
+    <h1>Books Data</h1>
+
+    <table id="Diplay-Table" style="width: 100%">
+      <tr>
+        <th>Book img</th>
+        <th>BookName</th>
+        <th>author</th>
+        <th>Edition</th>
+        <th>Genre</th>
+        <th>Publisher</th>
+        <th>Cost</th>
+        <th>Delete</th>
+        <th>Edit</th>
+      </tr>
+    </table>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>

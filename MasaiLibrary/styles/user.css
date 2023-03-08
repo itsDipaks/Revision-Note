@@ -1,0 +1,40 @@
+
+body{
+    text-align: center;
+}
+#Show-all-books{
+    display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(auto,200px);
+gap: 1rem;
+width: 90%;
+margin: auto;
+}
+.cart{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1rem;
+}
+.cart>img{
+    width: 20%;
+    height: 120px;
+}.cartcontent{
+    text-align: start;
+}
+
+.operationdiv{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+ 
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+.operationdiv>*{
+    padding: 0.5rem 3rem;
+    box-sizing: border-box;
+}

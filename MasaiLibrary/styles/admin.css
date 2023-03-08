@@ -1,0 +1,86 @@
+/* Admin Dashboard */
+body{
+    text-align: center;
+}
+#Addbook-form{
+    width: 80%;
+    margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+#Addbook-form>div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+#Addbook-form>div>*{
+padding: 0.2rem;
+width: 15%;
+}
+#Submitbookid{
+    width: 20%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+table, th, td {
+    border:1px solid black;
+align-items: center;
+text-align: center;
+  }
+
+
+
+.bookimg{
+    width: 100%;
+    margin: auto;
+    height: 150px;
+}
+
+
+
+
+.Imgbox{
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+
+#admin-form{
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid tomato;
+
+    width: 30%;
+    gap: 1rem;
+    margin: auto;
+    padding: 1rem;
+/* align-items: center; */
+justify-content: center;
+/* margin-top: 30vh; */
+}
+#admin-form>*{
+padding: 0.51rem;
+}
+.title{
+    text-align: center;
+    padding-top: 5rem;
+}
+.hint{
+    color: gray;
+    text-align: center;
+}

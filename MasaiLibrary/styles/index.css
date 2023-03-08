@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    padding: 2rem;
+}
+body{
+    text-align: center;
+}
+nav>a{
+    border: 1px solid tomato;
+    text-decoration: none;
+    padding: 0.51rem;
+    border-radius: 1rem;
+
+}
+nav>a:hover{
+    background: tomato;
+    color: white;
+}

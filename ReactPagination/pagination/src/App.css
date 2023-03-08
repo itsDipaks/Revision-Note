@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.pagination{
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  gap: 1rem;
+  margin: auto;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+.active{
+  color: tomato;
+
+}
+.disabeld{
+  display: none;
+}
